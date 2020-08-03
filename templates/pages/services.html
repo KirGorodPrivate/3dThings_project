@@ -1,0 +1,187 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block content %}
+<!-- Services Header -->
+<div class="services-bg">
+    <header class="services">
+        <div class="container">
+            <h2 class="services__title">3D Printing Services</h2>
+        </div>
+    </header>
+    
+    
+    <!-- Services About -->
+    <div class="services-about__bg">
+    <section class="services-about">
+        <div class="container">
+            <div class="row services-about__row">
+                <div class="col-xl-6 col-md-12 services-about__content">
+                    <h3 class="services-about__title">On-Demand Manufacturing</h3>
+                    <p class="services-about__text">Get durable prototypes and detailed models, with live customer support and technical guidance.</p>
+                    <a href="{% url 'quote' %}" class="header__button services-about__button">Get a Quote</a>
+                </div>
+                <div class="col-xl-6 col-md-12">
+                    <img src="{% static 'img/services/banner-services-about.png' %}" class="services-about__img img-fluid" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    </div>
+    </div>
+    
+    
+    <!-- Parts -->
+    <div class="parts__bg">
+    <section class="parts">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="cap__title parts__title">Parts for Every Purpose</h2>
+                </div>
+            </div>
+            <div class="row justify-content-center parts__row">
+                <div class="col-xl-4 col-md-6 col-sm-12">
+                    <img src="{% static 'img/services/parts/1.jpg' %}" class="parts__img" alt="">
+                </div>
+                <div class="col-xl-6 col-md-6 col-sm-12 parts__content">
+                    <h3 class="cap__suptitle parts__suptitle">FUNCTIONAL PROTOTYPES</h3>
+                    <p class="cap__text parts__text">Strong plastic parts for practical use and testing form, fit, and function.</p>
+                </div>
+            </div>
+            <div class="row justify-content-center parts__row">
+                <div class="col-xl-4 col-md-6 col-sm-12">
+                    <img src="{% static 'img/services/parts/2.jpg' %}" class="parts__img" alt="">
+                </div>
+                <div class="col-xl-6 col-md-6 col-sm-12 parts__content">
+                    <h3 class="cap__suptitle parts__suptitle">DETAILED MODELS</h3>
+                    <p class="cap__text parts__text">Produce accurate parts with crisp and clean features.</p>
+                </div>
+            </div>
+            <div class="row justify-content-center parts__row">
+                <div class="col-xl-4 col-md-6 col-sm-12">
+                    <img src="{% static 'img/services/parts/3.png' %}" class="parts__img" alt="">
+                </div>
+                <div class="col-xl-6 col-md-6 col-sm-12 parts__content">
+                    <h3 class="cap__suptitle parts__suptitle">PRODUCT DESIGN</h3>
+                    <p class="cap__text parts__text">Effective prototyping speeds up your product development cycle, proving your designs and getting you to market faster.</p>
+                </div>
+            </div>
+            <div class="row justify-content-center parts__row">
+                <div class="col-xl-4 col-md-6 col-sm-12">
+                    <img src="{% static 'img/services/parts/4.jpg' %}" class="parts__img" alt="">
+                </div>
+                <div class="col-xl-6 col-md-6 col-sm-12 parts__content">
+                    <h3 class="cap__suptitle parts__suptitle">DISPLAY PIECES</h3>
+                    <p class="cap__text parts__text">Create one-of-a-kind pieces that can't be found anywhere else.</p>
+                </div>
+            </div>
+            <div class="row justify-content-center parts__row">
+                <div class="col-xl-4 col-md-6 col-sm-12">
+                    <img src="{% static 'img/services/parts/5.jpg' %}" class="parts__img" alt="">
+                </div>
+                <div class="col-xl-6 col-md-6 col-sm-12 parts__content">
+                    <h3 class="cap__suptitle parts__suptitle">MOLD TOOLING</h3>
+                    <p class="cap__text parts__text">Create master tool patterns for molding reproduction in a variety of casting materials.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    </div>
+    <!-- How it Works -->
+    
+    <section class="works">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="works__title">How It Works</h2>
+                </div>
+            </div>
+    
+                <div class="row row-cols-1 row-cols-md-3">
+      <div class="col mb-4">
+        <div class="card">
+          <div class="card-body">
+              <p class="works__icon">1</p>
+                <h5 class="card-title">Upload 3D Files</h5>
+                <p class="card-text">Get an instant online quote for 3D printing in multiple material options. If you need some guidance or don't have 3D Model files, we're here to help.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col mb-4">
+        <div class="card">
+          <div class="card-body">
+                <p class="works__icon">2</p>
+                <h5 class="card-title">We Build Your Parts</h5>
+                <p class="card-text">Your parts are made to order in your chosen material, with production-quality 3D printers. All 3D model files undergo quality checks to ensure successful results.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col mb-4">
+        <div class="card">
+          <div class="card-body">
+                <p class="works__icon">3</p>
+                <h5 class="card-title">Pickup or Shipping</h5>
+                <p class="card-text">Choose local pickup or shipping at checkout, and we'll notify you when your order is complete.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+        </div>
+    </section>
+    
+    
+    <!-- Materials -->
+    <div class="materials__bg">
+    <section class="materials">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12">
+                    <h2 class="materials__title">Material Options</h2>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-4">
+                    <h3 class="materials__type type-active">ABS Plastic</h3>
+                </div>
+                <div class="col-4">
+                    <h3 class="materials__type">SLA Resin</h3>
+                </div>
+                <div class="col-4">
+                    <h3 class="materials__type">SLS Nylon</h3>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-12">
+                    <img src="img/services/banner-abs1.jpg" class="materials__img img-fluid" alt="">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <button class="header__button services-button materials__button">Materials Specs</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    </div>
+    <!-- Quote -->
+    <div class="quote__bg">
+    <section class="quote">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 quote__title">
+                    <h3>Давайте создадим что-нибудь.</h3>
+                </div>
+                <div class="col-12 quote__text">
+                    <p>Отправьте свои требования к проекту или используйте нашу интерактивную онлайн-платформу для мгновенного самообслуживания.</p>
+                </div>
+                <div class="col-12">
+                    <a href="{% url 'quote' %}" class="header__button">Сделать Заказ</a>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    </div>
+{% endblock %}

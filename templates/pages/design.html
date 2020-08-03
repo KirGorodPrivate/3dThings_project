@@ -1,0 +1,137 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block content %}
+
+<div class="design-bg">
+<header class="design">
+	<div class="container">
+		<h2 class="design__title">3D Design Services</h2>
+	</div>
+</header>
+
+<div class="describe-bg">
+<section class="describe">
+	<div class="container">
+		<div class="row justify-content-between">
+			<div class="col-md-6 describe__outer">
+				<div class="describe__inner">
+					<h3 class="describe__title">You Describe It.</h3>
+					<h3 class="describe__title">We Design It.</h3>
+					<p class="describe__text">Create a precise 3D design according to your specifications.</p>
+					<a class="header__button describe__btn" href="{% url 'quote' %}">Get a Quote</a>
+				</div>
+			</div>
+			<div class="col-md-6"><img class="describe__img" src="{% static 'img/design/1.png' %}" alt=""></div>
+		</div>
+	</div>
+</section>
+</div>
+</div>
+
+<div class="applications-bg">
+<section class="applications">
+	<div class="container">
+	<div class="row">
+		<div class="col-12">
+			<h2 class="cap__title parts__title">Applications</h2>
+		</div>
+	</div>
+	<div class="row justify-content-center parts__row">
+		<div class="col-xl-4 col-md-6 col-sm-12">
+			<img src="{%static 'img/design/2.gif' %}" class="parts__img" alt="">
+		</div>
+		<div class="col-xl-6 col-md-6 col-sm-12 parts__content">
+			<h3 class="cap__suptitle parts__suptitle applications__suptitle">DIGITAL SCULPTING</h3>
+			<p class="cap__text parts__text">Our digital sculpting services transform your sketches and reference images into full-featured 3D model files, ready for 3D printing.</p>
+		</div>
+	</div>
+	<div class="row justify-content-center parts__row">
+		<div class="col-xl-4 col-md-6 col-sm-12">
+			<img src="{%static 'img/design/3.gif' %}" class="parts__img" alt="">
+		</div>
+		<div class="col-xl-6 col-md-6 col-sm-12 parts__content">
+			<h3 class="cap__suptitle parts__suptitle applications__suptitle">3D CAD ENGINEERING</h3>
+			<p class="cap__text parts__text">Mechanical design services for detailed product design and engineering. Get true CAD design files in STEP / IGES format.</p>
+		</div>
+	</div>
+	<div class="row justify-content-center parts__row applications__row">
+		<div class="col-xl-4 col-md-6 col-sm-12">
+			<img src="{%static 'img/design/4.png' %}" class="parts__img" alt="">
+		</div>
+		<div class="col-xl-6 col-md-6 col-sm-12 parts__content">
+			<h3 class="cap__suptitle parts__suptitle applications__suptitle">3D RENDERING</h3>
+			<p class="cap__text parts__text">Get a detailed full-color 3D visualization of your finished part.</p>
+		</div>
+	</div>
+</div>
+</section>
+</div>
+
+
+
+<!-- How it Works -->
+<div class="design-works-bg">
+<section class="works">
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<h2 class="works__title">How It Works</h2>
+			</div>
+		</div>
+
+			<div class="row row-cols-1 row-cols-md-3">
+  <div class="col mb-4">
+    <div class="card">
+      <div class="card-body">
+	      <p class="works__icon works__icon-design">1</p>
+			<h5 class="card-title">Define Requirements</h5>
+			<p class="card-text">Define your needs using reference images of similar items or a simple sketch, and a written description.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col mb-4">
+    <div class="card">
+      <div class="card-body">
+			<p class="works__icon works__icon-design">2</p>
+			<h5 class="card-title">Design + Review</h5>
+			<p class="card-text">We create a 3D model based on your design requirements, and present it to you for review and revision. Any changes you identify will be addressed, and this process repeats until you approve the 3D model file.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col mb-4">
+    <div class="card">
+      <div class="card-body">
+			<p class="works__icon works__icon-design">3</p>
+			<h5 class="card-title">Start 3D Printing</h5>
+			<p class="card-text">Your completed 3D model file will be delivered via download link, and is ready for 3D printing production.</p>
+      </div>
+    </div>
+  </div>
+</div>
+	</div>
+</section>
+</div>
+
+<!-- Quote -->
+<div class="quote__bg">
+<section class="quote">
+	<div class="container">
+		<div class="row">
+			<div class="col-12 quote__title">
+				<h3>Давайте создадим что-нибудь.</h3>
+			</div>
+			<div class="col-12 quote__text">
+				<p>Отправьте свои требования к проекту или используйте нашу интерактивную онлайн-платформу для мгновенного самообслуживания.</p>
+			</div>
+			<div class="col-12">
+				<a href="{% url 'quote' %}" class="header__button">Сделать Заказ</a>
+			</div>
+			
+		</div>
+	</div>
+</section>
+</div>
+
+{% endblock %}

@@ -1,0 +1,65 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="inner">
+    <section class="quote-header">
+        <div class="container py-a">
+            <div class="row">
+                <div class="col-xl-12">
+                    <h1 class="quote-header__text">Get a Quote</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<div class="quote-form__clip-bg">
+  <section class="quote-form">
+    <div class="container">
+      <div class="quote-form__bg">
+        <div class="quote-form__title">Provide Project Details</div>
+          <div class="quote-form__text">Complete this form to tell us about your project, and a Project Manager will</br> review and respond today.</div>
+          <form method="POST" enctype="multipart/form-data">
+            {% include 'partials/_alerts.html' %}
+            {% csrf_token %}
+            <div class="form-group">
+              <label class="quote-form__label" for="Name">Name</label>
+              {{ form.username }}
+            </div>
+            <div class="form-group">
+              <label class="quote-form__label" for="Email">Email address</label>
+              {{ form.email }}
+              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <div class="form-group">
+              <label class="quote-form__label" for="Phone">Phone number</label>
+              {{ form.phone }}
+            </div>
+            <div class="form-group">
+              <label class="quote-form__label" for="exampleFormControlTextarea1">What do you want to create?</label>
+              {{ form.description }}
+            </div>
+            <div class="form-group">
+              <label class="quote-form__label" for="Deadline">Do you have a deadline?</label>
+              {{ form.deadline }}
+            </div>
+            <div class="form-group">
+              <label class="quote-form__label" for="exampleFormControlFile1">Add Files: Images, Drawings, etc.</label>
+              {{ form.document }}
+            </div>
+            <button type="submit" class="btn btn-primary">Submit Request</button>
+          </form>
+      <!-- 		<form action="" method="GET">
+            <div class="form-group">
+              <label class="quote-form__label">Name</label>
+              <input type="text" name="q">
+            </div>
+            <input type="submit" value="Save">
+          </form> -->
+      </div>
+    </div>
+  </section>
+  </div>
+
+{% endblock %}

@@ -1,0 +1,139 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block content %}
+<!-- Header -->
+<div class="header__bg">
+    <header class="header">
+        <div class="container">
+            <h1 class="header__title">Комплексный дизайн и изготовление</h1>
+            <p class="header__text">From concept to creation, we've got you covered.</p>
+            <a href="{% url 'quote' %}" class="header__button">Сделать Заказ</a>
+    </header>
+    </div>
+
+    <!-- Alerts -->
+    {% include 'partials/_alerts.html' %}
+    <!-- About -->
+    <section class="about">
+        <div class="container">
+            <div class="row about__header">
+                <div class="col-xl-6 col-md-12 align-self-center">
+                    <h2 class="about__title">Любая часть, любой проект</h2>
+                    <p class="about__text">Создавайте <span class="about__span">надежные прототипы</span> и <span class="about__span">нестандартные творческие проекты</span> в ваши сроки.</p>
+                </div>
+            
+                <div class="col-xl-6">
+                    <img src="{% static 'img/3d-print_md.jpg' %}" class="about__img img-fluid" alt="">
+                </div>
+            </div>
+        <div class="row row-cols-1 row-cols-md-3">
+      <div class="col mb-4">
+        <div class="card">
+          <div class="card-body">
+              <span class="fa-stack fa-1x">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="far fa-comments fa-stack-1x fa-inverse"></i>
+                </span>
+            <h5 class="card-title">Персональная поддержка</h5>
+            <p class="card-text">Ищете совет? Не уверен, что будет работать? Мы здесь, чтобы помочь превратить ваши идеи в уникальные концепции и добиться победных результатов.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col mb-4">
+        <div class="card">
+          <div class="card-body">
+              <span class="fa-stack fa-1x">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fas fa-industry fa-stack-1x fa-inverse"></i>
+                </span>
+            <h5 class="card-title">Полный сервис доставки</h5>
+            <p class="card-text">Делать вещи должно быть просто. Мы руководствуемся вашим проектом, имея в виду комплексное решение, позволяющее вам избежать хлопот, связанных с несколькими поставщиками услуг, для достижения единого результата.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col mb-4">
+        <div class="card">
+          <div class="card-body">
+              <span class="fa-stack fa-1x">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="far fa-clock fa-stack-1x fa-inverse"></i>
+                </span>
+            <h5 class="card-title">Производство в срок</h5>
+            <p class="card-text">Для развлекательных программ, живых выступлений и специальных мероприятий всегда нужны своевременные решения. Мы не пропускаем сроки.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+        </div>
+    </section>
+    
+    <div class="cap__bg">
+    <section class="cap">
+    <div class="cap__item">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="cap__title">Возможности</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xl-5 col-md-12">
+                    <img src="{% static 'img/cap/1.jpg' %}" class="cap__img" alt="">
+                </div>
+                <div class="col-xl-7 col-md-12 my-auto">
+                    <h3 class="cap__suptitle">Концептуальный дизайн</h3>
+                    <p class="cap__text">Мы используем идеи «голубого неба» и безопасно внедряем их, прокладывая путь от первоначальной концепции до готового производства.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="cap__item">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-5 col-md-12">
+                    <img src="{% static 'img/cap/2.jpg' %}" class="cap__img" alt="">
+                </div>
+                <div class="col-xl-7 col-md-12 my-auto">
+                    <h3 class="cap__suptitle">3d печать</h3>
+                    <p class="cap__text">Получите точные и долговечные 3D-печатные детали за несколько дней. Загрузите файлы 3D-модели, чтобы получить автоматическое предложение, или получите бесплатное руководство эксперта от менеджера проекта.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="cap__item">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-xl-5 col-md-12">
+                    <img src="{% static 'img/cap/3.jpg' %}" class="cap__img" alt="">
+                </div>
+                <div class="col-xl-7 col-md-12">
+                    <h3 class="cap__suptitle">Изготовление на заказ</h3>
+                    <p class="cap__text">Создавайте уникальные изделия любого размера из любого материала от начала до конца. Мы выберем подходящие материалы и процессы для работы, будь то 3D-печать, силиконовое литье, литейное литье, золотое покрытие, фрезерование с ЧПУ, вакуумная формовка - этот список можно продолжить.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+    </div>
+    
+    <div class="quote__bg">
+    <!-- Quote -->
+    <section class="quote">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 quote__title">
+                    <h3>Давайте создадим что-нибудь.</h3>
+                </div>
+                <div class="col-12 quote__text">
+                    <p>Отправьте свои требования к проекту или используйте нашу интерактивную онлайн-платформу для мгновенного самообслуживания.</p>
+                </div>
+                <div class="col-12">
+                    <a href="{% url 'quote' %}" class="header__button">Сделать Заказ</a>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+{% endblock %}

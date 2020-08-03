@@ -1,0 +1,106 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block content %}
+<!-- Materials Header -->
+<header class="materials__header">
+
+</header>
+
+<!-- About -->
+<section class="materials-about">
+	<div class="container">
+		<div class="row justify-content-center materials-about__btn">
+				<div class="col-3 p-0"><h3 class="text-left materials-about__type type-active">ABS Plastic</h3></div>
+				<div class="col-3 p-0"><h3 class="text-center materials-about__type">SLA Resin</h3></div>
+				<div class="col-3 p-0"><h3 class="text-right materials-about__type">SLS Nylon</h3></div>
+		</div>
+
+		<div class="row justify-content-center materials-about__info">
+			<div class="col-xl-9 p-0">
+			<p class="materials-about__title">About ABS Plastic</p>
+			<p class="materials-about__spec"><b>Process:</b> Fused Deposition Modeling</p>
+			<p class="materials__spec"><b>Main Benefits:</b> Fast Turnaround, Good General-Purpose Prototypes</p>
+			<hr>
+
+			<p class="materials-about__text">This hard, sturdy material is ideal for quick general prototyping and confirmation of form, fit, and function. ABS Plastic parts are accurate and consistent, however part surfaces do show visible build lines, especially along organically curved surfaces. Build lines can be sanded away, but if you require clean and smooth surfaces for mold-making or presentation purposes without needing to hand-finish parts, SLA Resin is recommended.</p>
+
+			<p class="materials-about__text">Choose ABS Plastic if you want quick turnaround on quality plastic prototypes for any general purpose. Not recommended for small figurines or parts with thin unsupported features under 2mm.</p>
+			</div>
+		</div>
+
+		<div class="row justify-content-center materials-about__info">
+			<div class="col-xl-9 p-0 ">
+				<p class="materials-about__title">Common Uses</p>
+				<hr>
+
+					<p class="materials-about__text materials-about__text-uses">General Prototyping</p>
+					<p class="materials-about__text materials-about__text-uses">Mechanical Assemblies</p>
+					<p class="materials-about__text materials-about__text-uses">Fit-Checking</p>
+
+
+				<p class="materials-about__text materials-about__text-uses">Durable Enclosures</p>
+				<p class="materials-about__text materials-about__text-uses">Engineering Samples</p>
+			<p class="materials-about__text materials-about__text-uses">Fast Iteration</p>
+
+			</div>
+		</div>
+
+		<div class="row justify-content-center materials-about__info">
+			<div class="col-xl-9 p-0">
+				<p class="materials-about__title">Specifications</p>
+				<hr>
+				<p class="materials-about__text materials-about__text-spec materials-about__text-spec-left">Layer Resolution</p>
+				<p class="materials-about__text materials-about__text-spec materials-about__text-spec-right">0.254mm</p>
+				<hr>
+				<p class="materials-about__text materials-about__text-spec materials-about__text-spec-left">Min. Feature Width</p>
+				<p class="materials-about__text materials-about__text-spec materials-about__text-spec-right">1mm</p>
+				<hr>
+				<p class="materials-about__text materials-about__text-spec materials-about__text-spec-left">Maximum Part Size</p>
+				<p class="materials-about__text materials-about__text-spec materials-about__text-spec-right">254mm x 254mm x 305mm</p>
+				<hr>
+				<p class="materials-about__text materials-about__text-spec materials-about__text-spec-left">Lead Time</p>
+				<p class="materials-about__text materials-about__text-spec materials-about__text-spec-right">1-3 Days</p>
+				<hr>
+				<p class="materials-about__text materials-about__text-spec materials-about__text-spec-left">Color</p>
+				<p class="materials-about__text materials-about__text-spec materials-about__text-spec-right">White or Black</p>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="materials-instaquote">
+	<div class="container">
+		<div class="row justify-content-between">
+			<div class="col-xl-4 col-md-12">
+				<img class="materials-instaquote__img" src="{% static 'img/materials/skew-img.png' %}" alt="">
+			</div>
+			<div class="col-xl-6 col-md-12 materials-instaquote__row">
+				<h3 class="materials-instaquote__title">Get your parts into production today</h3>
+				<a href="{% url 'quote' %}" class="header__button materials-instaquote__btn">Instant Online Quote</a>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- Quote -->
+<div class="materials-quote__bg">
+<section class="materials-quote">
+	<div class="container">
+		<div class="row">
+			<div class="col-12 quote__title">
+				<h3>Давайте создадим что-нибудь.</h3>
+			</div>
+			<div class="col-12 quote__text">
+				<p>Отправьте свои требования к проекту или используйте нашу интерактивную онлайн-платформу для мгновенного самообслуживания.</p>
+			</div>
+			<div class="col-12">
+				<a class="header__button services-about__button" href="{% url 'quote' %}">Сделать заказ</a>
+			</div>
+			
+		</div>
+	</div>
+</section>
+</div>
+{% endblock %}

@@ -1,0 +1,44 @@
+#header {
+    height: 50px;
+    background: #212529;
+    color: #fff;
+}
+
+#branding h1{
+    color: #fff;
+}
+
+a:link,
+a:visited {
+    color: #212529;
+}
+
+div.breadcrumbs {
+    background-color: #f0614c;
+    color: #212529;
+}
+
+div.breadcrumbs a {
+    color: #333;
+}
+
+img.brand_img {
+    margin-right: 10px;
+}
+
+.module caption{
+    background: #fc8d3e;
+}
+
+input[type=submit].default {
+    background: #f0614c;
+}
+
+input[type=submit].default:hover {
+    background: #da2a12;
+}
+
+input[type=submit].default:active, input[type=submit].default:focus {
+    background: #b92511;
+    outline: none;
+}

@@ -1,0 +1,12 @@
+{% load static %}
+
+<link rel="stylesheet" href="{% static 'listings/style.css' %}">
+
+{% if listings %}
+<ul>
+{% for listing in listings %}
+        <li>{{ listing.id }} - <a href="{% url 'listings:detail' listing.id %}">{{listing.title}}</a> <p>{{listing.description}}</p></li>
+        <p>{{listing.price}}$</p>
+{% endfor %}
+</ul>
+{% endif %}

@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block content %}
+<header class="gallery-header">
+	<div class="container">
+		<h1 class="gallery-header__header">Example Gallery</h1>
+	</div>
+</header>
+
+<div class="gallery-gallery__bg">
+<section class="gallery-gallery">
+	<div class="container">
+<!-- Grid row -->
+<div class="gallery" id="gallery">
+  <!-- Grid column -->
+  {% if 'gallery' %}
+    {% for photo in gallery %}
+      <div class="mb-3 pics animation all 1">
+        <img class="img-fluid gallery__img" src="{{ photo.photo.url }}" alt="Card image cap">
+      </div>
+    {% endfor %}
+  {% else %}
+    <div class="col-md-12">
+      <p>No images available</p>
+    </div>
+  {% endif %}
+
+</div>
+<!-- Grid row -->
+	</div>
+</section>
+</div>
+{% endblock %}

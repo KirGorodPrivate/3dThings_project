@@ -76,9 +76,13 @@
 			<div class="col-xl-4 col-md-12">
 				<img class="materials-instaquote__img" src="{% static 'img/materials/skew-img.png' %}" alt="">
 			</div>
-			<div class="col-xl-6 col-md-12 materials-instaquote__row">
-				<h3 class="materials-instaquote__title">Get your parts into production today</h3>
-				<a href="{% url 'quote' %}" class="header__button materials-instaquote__btn">Instant Online Quote</a>
+			<div class="col-xl-6 col-md-12">
+				<div class="row text-center">
+					<h3 class="materials-instaquote__title">Get your parts into production today</h3>
+				</div>
+				<div class="row">
+					<a href="{% url 'quote' %}" class="header__button materials-instaquote__btn">Instant Online Quote</a>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -96,7 +100,7 @@
 				<p>Отправьте свои требования к проекту или используйте нашу интерактивную онлайн-платформу для мгновенного самообслуживания.</p>
 			</div>
 			<div class="col-12">
-				<a class="header__button services-about__button" href="{% url 'quote' %}">Сделать заказ</a>
+				<a class="header__button services-about__button materials-quote__btn" href="{% url 'quote' %}">Сделать Заказ</a>
 			</div>
 			
 		</div>

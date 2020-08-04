@@ -3,7 +3,10 @@
 
 {% block branding %}
     <h1 id="head">
-        <img src="{% static 'img/logo_main.png' %}" alt="PrinterOk" height="50" class="brand_img">Admin Area
+        <a href="{% url 'index' %}">
+            <img src="{% static 'img/logo_main.png' %}" alt="PrinterOk" height="50" class="brand_img">
+        </a>
+        Admin Area
     </h1>
 {% endblock %}
 {% block extrastyle %}

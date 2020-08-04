@@ -42,3 +42,10 @@ input[type=submit].default:active, input[type=submit].default:focus {
     background: #b92511;
     outline: none;
 }
+
+
+@media(max-width: 1024px){
+    #header {
+        padding-bottom: 40px!important;
+    }
+}

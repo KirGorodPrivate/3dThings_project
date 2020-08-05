@@ -285,6 +285,446 @@ body {
   }
 }
 
+._anim-show-btn {
+  transform: translate(0px, 120%);
+  opacity: 0;
+}
+
+._anim-show-btn._active,
+._active ._anim-show-bnt {
+  opacity: 1;
+  transform: translate(0px, 0px);
+}
+
+._anim-show-0 {
+  transform: translate(0px, 120%);
+  opacity: 0;
+  transition: all 0.8s ease 0s;
+}
+
+._anim-show-0._active,
+._active ._anim-show-0 {
+  opacity: 1;
+  transform: translate(0px, 0px);
+  transition: all 0.8s ease 0s;
+}
+
+._anim-show-1 {
+  transform: translate(0px, 120%);
+  opacity: 0;
+  transition: all 0.8s ease 0s;
+}
+
+._anim-show-1._active,
+._active ._anim-show-1 {
+  opacity: 1;
+  transform: translate(0px, 0px);
+  transition: all 0.8s ease 0.1s;
+}
+
+._anim-show-2 {
+  transform: translate(0px, 120%);
+  opacity: 0;
+  transition: all 0.8s ease 0s;
+}
+
+._anim-show-2._active,
+._active ._anim-show-2 {
+  opacity: 1;
+  transform: translate(0px, 0px);
+  transition: all 0.8s ease 0.2s;
+}
+
+._anim-show-3 {
+  transform: translate(0px, 120%);
+  opacity: 0;
+  transition: all 0.8s ease 0s;
+}
+
+._anim-show-3._active,
+._active ._anim-show-3 {
+  opacity: 1;
+  transform: translate(0px, 0px);
+  transition: all 0.8s ease 0.3s;
+}
+
+._anim-show-4 {
+  transform: translate(0px, 120%);
+  opacity: 0;
+  transition: all 0.8s ease 0s;
+}
+
+._anim-show-4._active,
+._active ._anim-show-4 {
+  opacity: 1;
+  transform: translate(0px, 0px);
+  transition: all 0.8s ease 0.4s;
+}
+
+._anim-show-5 {
+  transform: translate(0px, 120%);
+  opacity: 0;
+  transition: all 0.8s ease 0s;
+}
+
+._anim-show-5._active,
+._active ._anim-show-5 {
+  opacity: 1;
+  transform: translate(0px, 0px);
+  transition: all 0.8s ease 0.5s;
+}
+
+._anim-show-6 {
+  transform: translate(0px, 120%);
+  opacity: 0;
+  transition: all 0.8s ease 0s;
+}
+
+._anim-show-6._active,
+._active ._anim-show-6 {
+  opacity: 1;
+  transform: translate(0px, 0px);
+  transition: all 0.8s ease 0.6s;
+}
+
+._anim-show-7 {
+  transform: translate(0px, 120%);
+  opacity: 0;
+  transition: all 0.8s ease 0s;
+}
+
+._anim-show-7._active,
+._active ._anim-show-7 {
+  opacity: 1;
+  transform: translate(0px, 0px);
+  transition: all 0.8s ease 0.7s;
+}
+
+._anim-show-8 {
+  transform: translate(0px, 120%);
+  opacity: 0;
+  transition: all 0.8s ease 0s;
+}
+
+._anim-show-8._active,
+._active ._anim-show-8 {
+  opacity: 1;
+  transform: translate(0px, 0px);
+  transition: all 0.8s ease 0.8s;
+}
+
+._anim-show-9 {
+  transform: translate(0px, 120%);
+  opacity: 0;
+  transition: all 0.8s ease 0s;
+}
+
+._anim-show-9._active,
+._active ._anim-show-9 {
+  opacity: 1;
+  transform: translate(0px, 0px);
+  transition: all 0.8s ease 0.9s;
+}
+
+._anim-show-10 {
+  transform: translate(0px, 120%);
+  opacity: 0;
+  transition: all 0.8s ease 0s;
+}
+
+._anim-show-10._active,
+._active ._anim-show-10 {
+  opacity: 1;
+  transform: translate(0px, 0px);
+  transition: all 0.8s ease 1s;
+}
+
+._anim-show-left-0 {
+  transform: translate(-120%, 0px);
+  opacity: 0;
+  transition: all 0.8s ease 0s;
+}
+
+._anim-show-left-0._active,
+._active ._anim-show-left-0 {
+  opacity: 1;
+  transform: translate(0px, 0px);
+  transition: all 0.8s ease 0s;
+}
+
+._anim-show-left-1 {
+  transform: translate(-120%, 0px);
+  opacity: 0;
+  transition: all 0.8s ease 0s;
+}
+
+._anim-show-left-1._active,
+._active ._anim-show-left-1 {
+  opacity: 1;
+  transform: translate(0px, 0px);
+  transition: all 0.8s ease 0.1s;
+}
+
+._anim-show-left-2 {
+  transform: translate(-120%, 0px);
+  opacity: 0;
+  transition: all 0.8s ease 0s;
+}
+
+._anim-show-left-2._active,
+._active ._anim-show-left-2 {
+  opacity: 1;
+  transform: translate(0px, 0px);
+  transition: all 0.8s ease 0.2s;
+}
+
+._anim-show-left-3 {
+  transform: translate(-120%, 0px);
+  opacity: 0;
+  transition: all 0.8s ease 0s;
+}
+
+._anim-show-left-3._active,
+._active ._anim-show-left-3 {
+  opacity: 1;
+  transform: translate(0px, 0px);
+  transition: all 0.8s ease 0.3s;
+}
+
+._anim-show-left-4 {
+  transform: translate(-120%, 0px);
+  opacity: 0;
+  transition: all 0.8s ease 0s;
+}
+
+._anim-show-left-4._active,
+._active ._anim-show-left-4 {
+  opacity: 1;
+  transform: translate(0px, 0px);
+  transition: all 0.8s ease 0.4s;
+}
+
+._anim-show-left-5 {
+  transform: translate(-120%, 0px);
+  opacity: 0;
+  transition: all 0.8s ease 0s;
+}
+
+._anim-show-left-5._active,
+._active ._anim-show-left-5 {
+  opacity: 1;
+  transform: translate(0px, 0px);
+  transition: all 0.8s ease 0.5s;
+}
+
+._anim-show-left-6 {
+  transform: translate(-120%, 0px);
+  opacity: 0;
+  transition: all 0.8s ease 0s;
+}
+
+._anim-show-left-6._active,
+._active ._anim-show-left-6 {
+  opacity: 1;
+  transform: translate(0px, 0px);
+  transition: all 0.8s ease 0.6s;
+}
+
+._anim-show-left-7 {
+  transform: translate(-120%, 0px);
+  opacity: 0;
+  transition: all 0.8s ease 0s;
+}
+
+._anim-show-left-7._active,
+._active ._anim-show-left-7 {
+  opacity: 1;
+  transform: translate(0px, 0px);
+  transition: all 0.8s ease 0.7s;
+}
+
+._anim-show-left-8 {
+  transform: translate(-120%, 0px);
+  opacity: 0;
+  transition: all 0.8s ease 0s;
+}
+
+._anim-show-left-8._active,
+._active ._anim-show-left-8 {
+  opacity: 1;
+  transform: translate(0px, 0px);
+  transition: all 0.8s ease 0.8s;
+}
+
+._anim-show-left-9 {
+  transform: translate(-120%, 0px);
+  opacity: 0;
+  transition: all 0.8s ease 0s;
+}
+
+._anim-show-left-9._active,
+._active ._anim-show-left-9 {
+  opacity: 1;
+  transform: translate(0px, 0px);
+  transition: all 0.8s ease 0.9s;
+}
+
+._anim-show-left-10 {
+  transform: translate(-120%, 0px);
+  opacity: 0;
+  transition: all 0.8s ease 0s;
+}
+
+._anim-show-left-10._active,
+._active ._anim-show-left-10 {
+  opacity: 1;
+  transform: translate(0px, 0px);
+  transition: all 0.8s ease 1s;
+}
+
+._anim-show-right-0 {
+  transform: translate(120%, 0px);
+  opacity: 0;
+  transition: all 0.8s ease 0s;
+}
+
+._anim-show-right-0._active,
+._active ._anim-show-right-0 {
+  opacity: 1;
+  transform: translate(0px, 0px);
+  transition: all 0.8s ease 0s;
+}
+
+._anim-show-right-1 {
+  transform: translate(120%, 0px);
+  opacity: 0;
+  transition: all 0.8s ease 0s;
+}
+
+._anim-show-right-1._active,
+._active ._anim-show-right-1 {
+  opacity: 1;
+  transform: translate(0px, 0px);
+  transition: all 0.8s ease 0.1s;
+}
+
+._anim-show-right-2 {
+  transform: translate(120%, 0px);
+  opacity: 0;
+  transition: all 0.8s ease 0s;
+}
+
+._anim-show-right-2._active,
+._active ._anim-show-right-2 {
+  opacity: 1;
+  transform: translate(0px, 0px);
+  transition: all 0.8s ease 0.2s;
+}
+
+._anim-show-right-3 {
+  transform: translate(120%, 0px);
+  opacity: 0;
+  transition: all 0.8s ease 0s;
+}
+
+._anim-show-right-3._active,
+._active ._anim-show-right-3 {
+  opacity: 1;
+  transform: translate(0px, 0px);
+  transition: all 0.8s ease 0.3s;
+}
+
+._anim-show-right-4 {
+  transform: translate(120%, 0px);
+  opacity: 0;
+  transition: all 0.8s ease 0s;
+}
+
+._anim-show-right-4._active,
+._active ._anim-show-right-4 {
+  opacity: 1;
+  transform: translate(0px, 0px);
+  transition: all 0.8s ease 0.4s;
+}
+
+._anim-show-right-5 {
+  transform: translate(120%, 0px);
+  opacity: 0;
+  transition: all 0.8s ease 0s;
+}
+
+._anim-show-right-5._active,
+._active ._anim-show-right-5 {
+  opacity: 1;
+  transform: translate(0px, 0px);
+  transition: all 0.8s ease 0.5s;
+}
+
+._anim-show-right-6 {
+  transform: translate(120%, 0px);
+  opacity: 0;
+  transition: all 0.8s ease 0s;
+}
+
+._anim-show-right-6._active,
+._active ._anim-show-right-6 {
+  opacity: 1;
+  transform: translate(0px, 0px);
+  transition: all 0.8s ease 0.6s;
+}
+
+._anim-show-right-7 {
+  transform: translate(120%, 0px);
+  opacity: 0;
+  transition: all 0.8s ease 0s;
+}
+
+._anim-show-right-7._active,
+._active ._anim-show-right-7 {
+  opacity: 1;
+  transform: translate(0px, 0px);
+  transition: all 0.8s ease 0.7s;
+}
+
+._anim-show-right-8 {
+  transform: translate(120%, 0px);
+  opacity: 0;
+  transition: all 0.8s ease 0s;
+}
+
+._anim-show-right-8._active,
+._active ._anim-show-right-8 {
+  opacity: 1;
+  transform: translate(0px, 0px);
+  transition: all 0.8s ease 0.8s;
+}
+
+._anim-show-right-9 {
+  transform: translate(120%, 0px);
+  opacity: 0;
+  transition: all 0.8s ease 0s;
+}
+
+._anim-show-right-9._active,
+._active ._anim-show-right-9 {
+  opacity: 1;
+  transform: translate(0px, 0px);
+  transition: all 0.8s ease 0.9s;
+}
+
+._anim-show-right-10 {
+  transform: translate(120%, 0px);
+  opacity: 0;
+  transition: all 0.8s ease 0s;
+}
+
+._anim-show-right-10._active,
+._active ._anim-show-right-10 {
+  opacity: 1;
+  transform: translate(0px, 0px);
+  transition: all 0.8s ease 1s;
+}
+
 .services {
   background: linear-gradient(rgba(35, 34, 34, 0.8), #20201d), url(../img/services/bg_3.jpg);
   background-repeat: no-repeat;
@@ -300,7 +740,7 @@ body {
 .services__title {
   text-align: center;
   font-size: 48px;
-  padding: 200px;
+  padding: 180px;
   color: #fff;
 }
 .services__title:after {

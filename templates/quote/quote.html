@@ -7,7 +7,7 @@
         <div class="container py-a">
             <div class="row">
                 <div class="col-xl-12">
-                    <h1 class="quote-header__text">Get a Quote</h1>
+                    <h1 class="quote-header__text">Сделать Заказ</h1>
                 </div>
             </div>
         </div>
@@ -18,37 +18,37 @@
   <section class="quote-form">
     <div class="container">
       <div class="quote-form__bg">
-        <div class="quote-form__title">Provide Project Details</div>
-          <div class="quote-form__text">Complete this form to tell us about your project, and a Project Manager will</br> review and respond today.</div>
+        <div class="quote-form__title">Предоставьте Детали Проекта</div>
+          <div class="quote-form__text">Заполните эту форму, чтобы рассказать нам о своем проекте, и менеджер проекта </br> рассмотрит и ответит сегодня.</div>
           <form method="POST" enctype="multipart/form-data">
             {% include 'partials/_alerts.html' %}
             {% csrf_token %}
             <div class="form-group">
-              <label class="quote-form__label" for="Name">Name</label>
+              <label class="quote-form__label" for="Name">Имя</label>
               {{ form.username }}
             </div>
             <div class="form-group">
-              <label class="quote-form__label" for="Email">Email address</label>
+              <label class="quote-form__label" for="Email">Адресс электронной почты</label>
               {{ form.email }}
-              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+              <small id="emailHelp" class="form-text text-muted">Мы никогда не передадим вашу электронную почту кому-либо еще.</small>
             </div>
             <div class="form-group">
-              <label class="quote-form__label" for="Phone">Phone number</label>
+              <label class="quote-form__label" for="Phone">Номер телефона</label>
               {{ form.phone }}
             </div>
             <div class="form-group">
-              <label class="quote-form__label" for="exampleFormControlTextarea1">What do you want to create?</label>
+              <label class="quote-form__label" for="exampleFormControlTextarea1">Что вы хотите создать?</label>
               {{ form.description }}
             </div>
             <div class="form-group">
-              <label class="quote-form__label" for="Deadline">Do you have a deadline?</label>
+              <label class="quote-form__label" for="Deadline">У вас есть крайний срок?</label>
               {{ form.deadline }}
             </div>
             <div class="form-group">
-              <label class="quote-form__label" for="exampleFormControlFile1">Add Files: Images, Drawings, etc.</label>
+              <label class="quote-form__label" for="exampleFormControlFile1">Добавить файлы: изображения, рисунки и т.д.</label>
               {{ form.document }}
             </div>
-            <button type="submit" class="btn btn-primary">Submit Request</button>
+            <button type="submit" class="btn btn-primary">Отправить Запрос</button>
           </form>
       <!-- 		<form action="" method="GET">
             <div class="form-group">

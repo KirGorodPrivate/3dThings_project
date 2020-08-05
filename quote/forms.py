@@ -25,7 +25,7 @@ class QuoteForm(forms.Form):
     phone = forms.CharField(widget=forms.TextInput(attrs={
         "class": "form-control"
     }))
-    description = forms.CharField(widget=forms.TextInput(attrs={
+    description = forms.CharField(widget=forms.Textarea(attrs={
         "class": "form-control"
     }))
     deadline = forms.CharField(widget=forms.TextInput(attrs={

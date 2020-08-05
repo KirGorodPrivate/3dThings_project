@@ -4,7 +4,7 @@
       <!-- Listing -->
   <section id="listing" class="py-4">
     <div class="container">
-      <a href="{% url 'listings' %}" class="btn btn-light mb-4">Back To Listings</a>
+      <a href="{% url 'listings' %}" class="btn btn-light mb-4">Назад к списку товаров</a>
       <div class="row">
         <div class="col-md-9">
           <!-- Home Main Image -->
@@ -60,26 +60,21 @@
             
               <ul class="list-group list-group-flush">
                 <li class="list-group-item text-secondary">
-                  <i class="fas fa-money-bill-alt"></i> Asking Price:
-                  <span class="float-right">$490,000</span>
+                  <i class="fas fa-money-bill-alt"></i> Цена:
+                  <span class="float-right">${{ listing.price }}</span>
                 </li>
                 <li class="list-group-item text-secondary">
-                  <i class="fas fa-bed"></i> Bedrooms:
-                  <span class="float-right">3</span>
+                  <i class="fas fa-flask"></i> Тип пластика:
+                  <span class="float-right">ABC</span>
                 </li>
                 <li class="list-group-item text-secondary">
-                  <i class="fas fa-bath"></i> Bathrooms:
-                  <span class="float-right">2</span>
-                </li>
-                <li class="list-group-item text-secondary">
-                  <i class="fas fa-car"></i> Garage:
-                  <span class="float-right">2
-                  </span>
+                  <i class="fas fa-arrows-alt"></i> Размер:
+                  <span class="float-right">20х20х40см</span>
                 </li>
               </ul>
         
             
-              <ul class="list-group list-group-flush">
+              <!-- <ul class="list-group list-group-flush">
                 <li class="list-group-item text-secondary">
                   <i class="fas fa-th-large"></i> Square Feet:
                   <span class="float-right">3200</span>
@@ -100,7 +95,7 @@
                 </li>
 
 
-              </ul>
+              </ul> -->
             
           </div>
 

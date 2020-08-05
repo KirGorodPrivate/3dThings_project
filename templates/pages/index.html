@@ -7,14 +7,15 @@
 <div class="header__bg">
     <header class="header">
         <div class="container">
+                <!-- Alerts -->
+            {% include 'partials/_alerts.html' %}
             <h1 class="header__title">Комплексный дизайн и изготовление</h1>
             <p class="header__text">От идеи до создания, мы позаботимся.</p>
             <a href="{% url 'quote' %}" class="header__button">Сделать Заказ</a>
     </header>
     </div>
 
-    <!-- Alerts -->
-    {% include 'partials/_alerts.html' %}
+
     <!-- About -->
     <section class="about">
         <div class="container">

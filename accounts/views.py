@@ -12,10 +12,10 @@ def login(request):
 
         if user is not None:
             auth.login(request, user)
-            messages.success(request, "You are now logged in")
+            messages.success(request, "Вы вошли в аккаунт. Добро пожаловать!")
             return redirect('index')
         else:
-            messages.error(request, "Invalid credentials")
+            messages.error(request, "Неверный логин или пароль")
             return redirect('login')
     return render(request, 'accounts/login.html')
 
@@ -34,11 +34,11 @@ def register(request):
         if password == password2:
             # Check username
             if User.objects.filter(username=username).exists():
-                messages.error(request, 'That username is taken')
+                messages.error(request, 'Данное имя пользователя уже занято')
                 return redirect('register')
             else:
                 if User.objects.filter(email=email).exists():
-                    messages.error(request, 'That email is being used')
+                    messages.error(request, 'Этот адресс электронной почты уже используется')
                     return redirect('register')
                 else:
                     #Looks good
@@ -49,7 +49,7 @@ def register(request):
                     # return redirect('index')
 
                     user.save()
-                    messages.success(request, 'You are now registered and can log in')
+                    messages.success(request, 'Вы зарегистрированы и теперь можете войти!')
                     return redirect('login')
         else:
             messages.error(request, 'Passwords do not match')
@@ -64,7 +64,7 @@ def register(request):
 def logout(request):
     if request.method == 'GET':
         auth.logout(request)
-        messages.success(request, "You are now logged out")
+        messages.success(request, "Выход из аккаунта произведен успешно!")
         return redirect('index')
     else:
         return redirect('services')

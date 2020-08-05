@@ -3,3 +3,5 @@ db.sqlite3
 venv
 /static
 local_settings.py
+*__pycache__*
+*.pyc

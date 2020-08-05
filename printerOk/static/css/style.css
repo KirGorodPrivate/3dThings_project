@@ -39,6 +39,15 @@ body {
   background: #f0614c;
   text-decoration: none;
 }
+.navigation__button-login {
+  color: #fe8e3f;
+  border: 2px solid #fe8e3f;
+}
+.navigation__button-login:hover {
+  color: #fff;
+  background: #fe8e3f;
+  text-decoration: none;
+}
 .navigation__items {
   display: block;
   align-self: center;

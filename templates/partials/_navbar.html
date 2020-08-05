@@ -15,30 +15,44 @@
         Услуги
       </a>
       <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-        <a class="dropdown-item" href="{% url 'services' %}">3D Printing</a>
-        <a class="dropdown-item" href="{% url 'design' %}">3D Design</a>
-        <a class="dropdown-item" href="{% url 'materials' %}">Materials</a>
+        <a class="dropdown-item" href="{% url 'services' %}">3D Печать</a>
+        <a class="dropdown-item" href="{% url 'design' %}">3D Дизайн</a>
+        <a class="dropdown-item" href="{% url 'materials' %}">О Материалах</a>
       </div>
     </li>
-    <li class="navigation__items dropdown">
-      <a class="navigation__link dropdown-toggle nav__dropdown" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        Вход
-      </a>
-      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-        <a class="dropdown-item" href="{% url 'login' %}">Login</a>
-        <a class="dropdown-item" href="{% url 'register' %}">Register</a>
-        <a class="dropdown-item" href="{% url 'logout' %}">Logout</a>
-      </div>
-    </li>
+    
     <li class="navigation__items">
         <a href="{% url 'listings' %}" class="navigation__link"><p class="navigation__text">Магазин</p></a>
     </li>
     <li class="navigation__items">
         <a href="{% url 'gallery' %}" class="navigation__link"><p class="navigation__text">Галерея</p></a>
     </li>
-    <li class="navigation__items">
+    <!-- <li class="navigation__items">
         <a href="{% url 'quote' %}" class="navigation__button">Сделать Заказ</a>
+    </li> -->
+    {% if user.is_authenticated %}
+    <li class="navigation__items dropdown">
+      <a class="navigation__link dropdown-toggle nav__dropdown" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        {% if user.first_name %}
+          Добро пожаловать, {{ user.first_name }}
+        {% elif user.username %}
+          Добро пожаловать, {{ user.username }}
+        {% else %}
+          Добро пожаловать!
+        {% endif %}
+      </a>
+      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <a class="dropdown-item" href="{% url 'logout' %}">Выход</a>
+      </div>
     </li>
+    {% else %}
+      <li class="navigation__items">
+        <a href="{% url 'login' %}" class="navigation__button navigation__button-login">Вход</a>
+      </li>
+      <li class="navigation__items">
+        <a href="{% url 'register' %}" class="navigation__button">Регистрация</a>
+      </li>
+    {% endif %}
   </ul>
 </div>
 </nav>

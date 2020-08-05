@@ -2,7 +2,7 @@
 
 <!-- {% load humanize %} -->
 {% load static %}
-
+{% block title %} | Наши Товары{% endblock %}
 {% block content %}
 
 <section id="showcase-inner" class="py-5 bg-success ">
@@ -27,7 +27,7 @@
 	  <div class="col-md-3 col-sm-6 mb-4 d-flex align-items-stretch">
 		<div class="product-grid">
 		  <div class="product-image">
-			<a href="#">
+			<a href="{% url 'listing' listing.id %}">
 				{% if listing.photo_card_2 != "" %}
 					<img class="pic-1" src="{{ listing.photo_card_1.url }}">
 					<img class="pic-2" src="{{ listing.photo_card_2.url }}">
